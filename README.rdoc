@@ -12,7 +12,7 @@ to runs on my environment:
 To install:
 - Prerequisites: You’ll need the fastercsv gem (‘gem install fastercsv’ as root).
 - Download the plugin to your plugins directory. Be sure to maintain the correct folder name, ‘redmine_importer’.
-- Run ‘rake redmine:plugin:migrate RAILS_ENV=production’
+- Run ‘rake redmine:plugins:migrate RAILS_ENV=production’
 - Restart your redmine as appropriate (e.g., ‘ruby script/server -e production’)
 - Go to the Admin/Projects/../Modules
 - Enable “Importer”
