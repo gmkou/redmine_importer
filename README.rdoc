@@ -1,8 +1,19 @@
 = importer
 
-This plugin is based on https://github.com/rchady/redmine_importer/ and
-https://github.com/juno/redmine_importer. 
-Customized for Japanese environment.
+This plugin is based on https://github.com/akiko-pusu/redmine_importer 
+to runs on my environment:
+  Redmine version                          2.0.3.stable
+  Ruby version                             1.8.7 (x86_64-linux)
+  Rails version                            3.2.6
+  Environment                              production
+  Database adapter                         MySQL
 
-Note: 
- Assigned user and creator name should be described via login id.
+
+To install:
+- Prerequisites: You’ll need the fastercsv gem (‘gem install fastercsv’ as root).
+- Download the plugin to your plugins directory. Be sure to maintain the correct folder name, ‘redmine_importer’.
+- Run ‘rake redmine:plugin:migrate RAILS_ENV=production’
+- Restart your redmine as appropriate (e.g., ‘ruby script/server -e production’)
+- Go to the Admin/Projects/../Modules
+- Enable “Importer”
+
